@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VBAZO Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Bebas+Neue&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <section class="header3">
+        <nav>
+            <a href="index.html"> <img src="images/Logo.png" alt="Logo VBAZO"></a>
+            <div class="nav-links" id="navLinks">
+                <div class="menu-btn"><i class="fa-solid fa-xmark" onclick="hideMenu()"></i></div>
+                 <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li> 
+                    <li><a href="Locaties.html"><i class="fa-solid fa-location-dot"></i>Locaties</a></li>
+                    <li><a href="Missie.html"><i class="fa-solid fa-bullseye"></i>Missie</a></li>
+                    <li><a href="Donatie.html"><i class="fa-solid fa-hand-holding-dollar"></i>Doneren</a></li>
+                    <li><a href="Galerij.html"><i class="fa-solid fa-camera"></i>Galerij</a></li>
+                 </ul>
+            </div>
+            <div class="menu-btn"><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>
+        </nav>
+
+    <div class="text-box">
+        <h1>"In de stilte van de wereld fluistert de natuur haar wijsheid, en het is aan ons om aandachtig te luisteren."</h1>
+    </div>
+    </section>
+
+    <ul id="accordion">
+        <li>
+            <label for="first">Missie <span>&#x3e;</span></label> 
+            <input type="radio" name="accordion" id="first" checked>
+            <div class="content">
+                <p>De missie van VBAZO is om op meerdere locaties in Amsterdam en uiteindelijk ook in Nederland een voedselbos te realiseren voor elke wijk. 
+                    De bomen die worden geplant zullen dan bekend staan als de longen van de buurt en zorgt voor meer leven in elke wijk.</p>
+            </div>
+        </li>
+        <li>
+            <label for="second">Waarom deze website? <span>&#x3e;</span></label> 
+            <input type="radio" name="accordion" id="second">
+            <div class="content">
+                <p>Deze website is gemaakt om ons doel te realiseren namelijk in meerdere wijken van Nederland een voedselbos tot stand brengen.</p>
+            </div>
+        </li>
+        <li>
+            <label for="third">Wat is een voedselbos? <span>&#x3e;</span></label> 
+            <input type="radio" name="accordion" id="third">
+            <div class="content">
+                <p>Een voedselbos is een ecosysteem waarbij de bewoners van de buurt zelf kunnen kiezen wat er geplant wordt in de wijk. </p>
+            </div>
+        </li>
+        <li>
+            <label for="fourth">Voordelen voedselbos <span>&#x3e;</span></label> 
+            <input type="radio" name="accordion" id="fourth">
+            <div class="content">
+                <p>Er zijn meerdere voordelen voor het hebben van een voedselbos in een wijk namelijk: <br>
+                    <br> Meer sociale contacten in een buurt, over het algemeen leven mensen in hun eigen wereld maar met het project kunnen de bewoners in harmonie met elkaar leven. <br>
+                    <br>Verbeterd het milieu, hierdoor zijn er meer bomen in een wijk. Meer bomen is meer is meer zuurstof om in te ademen. <br>
+                   <br> De geplante planten mogen geoogst worden door anderen hierdoor kan je verse groenten en fruit plukken uit je eigen wijk en hoef je niet veel te reizen.
+                    </p>
+            </div>
+        </li>
+        <li>
+            <label for="fifth">Hoe duurzaam is dit project? <span>&#x3e;</span></label> 
+            <input type="radio" name="accordion" id="fifth">
+            <div class="content">
+                <p>De missie van VBAZO is om op meerdere locaties in Amsterdam en uiteindelijk ook in Nederland een voedselbos te realiseren voor elke wijk. 
+                    De bomen die worden geplant zullen dan bekend staan als de longen van de buurt en zorgt voor meer leven in elke wijk.</p>
+            </div>
+        </li>
+    </ul>
+
+    <script>
+
+        var navLinks= document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right= "0";
+        }
+        function hideMenu(){
+            navLinks.style.right= "-200px";
+        }
+
+
+    </script>
+    
+</body>
+<section class="footer">
+    <h3>About Us</h3>
+    <p>Een website gemaakt om de wereld een stukje groener te maken </p>
+
+</section>
+
+
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VBAZO Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Bebas+Neue&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <section class="header4">
+        <nav>
+            <a href="index.html"> <img src="images/Logo.png" alt="Logo VBAZO"></a>
+            <div class="nav-links" id="navLinks">
+                <div class="menu-btn"><i class="fa-solid fa-xmark" onclick="hideMenu()"></i></div>
+                 <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li> 
+                    <li><a href="Locaties.html"><i class="fa-solid fa-location-dot"></i>Locaties</a></li>
+                    <li><a href="Missie.html"><i class="fa-solid fa-bullseye"></i>Missie</a></li>
+                    <li><a href="Donatie.html"><i class="fa-solid fa-hand-holding-dollar"></i>Doneren</a></li>
+                    <li><a href="Galerij.html"><i class="fa-solid fa-camera"></i>Galerij</a></li>
+                 </ul>
+            </div>
+            <div class="menu-btn"><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>
+        </nav>
+    </section>
+    <form action="action">
+        <h1>Donatie</h1>
+        <p>Vul het formulier in om meerdere voedselbossen te planten in Amsterdam en andere steden.</p>
+        <label for="Naam">Naam</label>
+        <input class="box1" name="Naam" id="Naam" placeholder="Vul je Naam in"><br>
+        <label for="Email">Email</label> <br>
+        <input class="box1" name="Email" id="Email" placeholder="Vul je Email in"><br>
+        <label for="Bedrag">Bedrag</label>
+        <input  class="box1" type="text" name="Bedrag" id="Bedrag" placeholder="Vul het bedrag in"><br>
+
+      <a href="Bedankt.html"><button class="btn" type="button">Betaal nu</button></a>
+      <a href="index.html"><button class="btn" type="button">sluiten</button></a>
+    </form>
+
+    <script>
+
+        var navLinks= document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right= "0";
+        }
+        function hideMenu(){
+            navLinks.style.right= "-200px";
+        }
+
+
+    </script>
+    
+    
+</body>
+<section class="footer">
+    <h3>About Us</h3>
+    <p>Een website gemaakt om de wereld een stukje groener te maken </p>
+
+</section>
+
+
+
+</html>

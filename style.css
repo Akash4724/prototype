@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/Background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 30px;
+    position: relative;
+    
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #cfcfcf;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+}
+.fa-solid{
+    padding: 8px 4px;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fefeffe6;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 52px;
+}
+
+.Donate-btn{
+    display: inline-block;
+    top: 250px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #ffffff;
+    padding: 14px 34px;
+    font-size: 13px;
+    font-family: 'Permanent Marker', cursive;
+    background: #6a9c67c2;
+    position: relative;
+    cursor: pointer;
+}
+.Donate-btn:hover{
+    border: 1px solid #ffffff;
+    background: #1fb43b;
+    transition: 0.8s;
+}
+
+.menu-btn{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #42875c;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .menu-btn{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+.Home{
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    padding-top: 20px;
+}
+.Home img{
+    width: 70%;
+    position: relative;
+    left: 40px;
+   
+}
+h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+p{
+    color: #0a0707;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: 'ABeeZee', sans-serif;
+}
+.footer{
+    width: 90%;
+    text-align: center;
+    padding: 20px 0;
+}
+.footer h3{
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.footer p{
+    text-align: center;
+    top: -30px;
+    left:  10px;
+    width: 90%;
+    position: relative;
+}
+
+.header2{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/Bannerpg2.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.text-box2{
+    width: 90%;
+    color: #ffffffe6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box2 h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+}
+
+.Locaties{
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    padding-top: 30px;
+}
+.Locaties img{
+    width: 70%;
+    position: relative;
+    left: 40px;
+   
+}
+.Locaties h2{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    bottom: 20px;
+}
+
+.Locaties p{
+    color: #0a0707;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: 'ABeeZee', sans-serif;
+}
+.Locaties ol li{
+    font-family: 'ABeeZee', sans-serif;
+    padding: 10px;
+}
+
+.header3{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/Background3.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.Missie{
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    padding-top: 20px;
+}
+.Missie img{
+    width: 70%;
+    position: relative;
+    left: 30px;
+   
+}
+.Missie h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#accordion{
+    margin: 30px auto;
+    width: 350px;
+}
+#accordion li{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #cfcfcf;
+    border-radius: 4px;
+}
+#accordion li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #4db25dac;
+}
+#accordion li label span{
+    transform: rotate(90deg);
+    font-size: 20px;
+    color: #333;
+}
+#accordion label + input[type="radio"]{
+    display: none;
+}
+#accordion .content{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#accordion label + input[type="radio"]:checked + .content{
+    max-height: 400px;
+}
+
+body{
+    background-color: #f8e9e9;
+}
+form{
+    width: 360px;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 #c5cace, 0 4px 8px 0 #30475e;
+
+}
+h1{
+    text-align: center;
+}
+.box1 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 10px 0 15px 0;
+}
+.btn{
+    width: 45%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    font-size: 13px;
+    font-family: 'Permanent Marker', cursive;
+}
+.header5{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/Donatie.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.text-box3{
+    width: 70%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+.container .heading{
+    width: 100%;
+    padding-bottom: 50px;
+
+}
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .box .foto{
+    display: flex;
+    flex-direction: column;
+    width: 62.5%;
+}
+.container .box .foto img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
